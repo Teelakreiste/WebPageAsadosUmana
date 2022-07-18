@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #928c8c;
+}
+
+h2 {
+    padding: 20px 0;
+    text-align: center;
+    line-height: 1;
+    color: #F15D11;
+    font-size: x-large;
+}
+
+h3 {
+    padding: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+    color: #c1320e;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 30px;
+    text-align: justify;
+    text-align-last: center;
+}

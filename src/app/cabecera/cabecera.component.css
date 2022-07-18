@@ -1,0 +1,18 @@
+.header-content{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://saboryestilo.com.mx/wp-content/uploads/elementor/thumbs/tips-para-hacer-la-mejor-carne-asada-oosqp5hqoc67bp3fp1r3tsy9i95b1uv1s65zjx38lc.jpg');
+    background-size: cover;
+    color:white;
+}
+
+.button {
+	color: #C14A0E;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.button:hover {
+	color: #cebb97 !important;
+}

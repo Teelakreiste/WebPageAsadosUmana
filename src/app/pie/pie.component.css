@@ -1,0 +1,21 @@
+/*FOOTER*/
+
+#footer .divider {
+    padding-bottom: 2px;
+    border-top: 1px solid #914119;
+    margin: 0 auto;
+}
+
+#footer .footer-box {
+    padding: 10px 25px;
+}
+
+#footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #cebb97;
+}
+
+#footer a:hover {
+    color: #F15D11;
+}

@@ -1,0 +1,44 @@
+<section id="menu" class="content">
+    <div class="divider"></div>
+    <h2>MENÚ</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                
+                <!-- <img src="images/almuerzos.png" alt="" width="150" height="150">-->
+                <ul>
+                    <li id="img"><img src="../../assets/almuerzos.png" alt=""></li>
+                    <li id="titulo">ALMUERZOS</li>
+                    <li *ngFor="let almuerzo of almuerzos">{{almuerzo.nombre}}</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                
+                <!--<img src="images/pescados.png" alt="" width="150" height="150">-->
+                <ul>
+                    <li id="img"><img src="../../assets/pescados.png" alt=""></li>
+                    <li id="titulo">PESCADOS</li>
+                    <li *ngFor="let pescado of pescados">{{pescado.nombre}}</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                
+                <!--<img src="images/carnes.png" alt="" width="150" height="150">-->
+                <ul>
+                    <li id="img"><img src="../../assets/carnes.png" alt=""></li>
+                    <li id="titulo">CARNES</li>
+                    <li *ngFor="let carne of carnes">{{carne.nombre}}</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                
+                <!--<img src="images/bebidas.png" alt="" width="150" height="150">-->
+                <ul>
+                    <li id="img"><img src="../../assets/bebidas.png" alt=""></li>
+                    <li id="titulo">BEBIDAS</li>
+                    <li *ngFor="let bebida of bebidas">{{bebida.nombre}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

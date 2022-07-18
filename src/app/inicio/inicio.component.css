@@ -1,0 +1,53 @@
+/*HOME*/
+#home {
+    text-align: center;
+    padding: 200px 0 150px;
+}
+
+#home .divider {
+    width: 80px;
+    border-top: 5px solid #914119;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#home h1 {
+    margin-top: 50px;
+    font-size: x-large;
+    color: #cebb97;
+}
+
+#home p {
+    color: rgb(220, 231, 226);
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#home h6 {
+    color: #cebb97;
+    margin-top: 40px;
+} 
+
+#home .social {
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+
+#home .social a {
+    display: block;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #f5deb3;
+}
+
+#home .social a:hover {
+    color: #F15D11;
+}
+
+#ca {
+    color: #F15D11;
+}

@@ -1,0 +1,12 @@
+/*INICIO (PRESENTACIÓN)*/
+#inicio {
+    text-align: center;
+}
+
+#inicio img {
+    display:block;
+    margin:auto;
+    padding-bottom: 15px;
+    width: 150px;
+    height: 150px;
+}

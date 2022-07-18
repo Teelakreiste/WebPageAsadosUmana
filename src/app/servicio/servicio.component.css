@@ -1,0 +1,21 @@
+
+/*SERVICIO*/
+.container img {
+    display:block;
+    margin:auto;
+    padding-bottom: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+.container p {
+    display: block;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.container .divider {
+    padding-bottom: 10px;
+    border-top: 1px solid #4e4d4d;
+    margin: 0 auto;
+}

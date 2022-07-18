@@ -1,0 +1,13 @@
+/*VIDEO*/
+.content-video video {
+    display: block;
+    border-radius: 10px;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content-video .divider {
+    padding-bottom: 2px;
+    border-top: 1px solid #914119;
+    margin: 0 auto;
+}

@@ -1,0 +1,104 @@
+.table {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+    border: 1px solid #212121;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px #444444;
+    color: #928c8c;
+}
+
+.table-bordered {
+    box-shadow: inset 0 0 10px #141414;
+}
+
+.table > tbody > tr > th {
+    /*text-align: left;*/
+    font-weight: normal;
+}
+
+.table th, td {
+    vertical-align: middle;
+}
+
+.table-hover > tbody > tr:hover {
+    /*background: #a84818;*/
+    font-weight: bold;
+    box-shadow: inset 0 0 10px #181818;
+}
+
+.table-hover > tbody > tr:hover > td {
+    color: #e2d8d8;
+}
+
+.table-hover > tbody > tr:hover > th {
+    color: #e2d8d8;
+    font-weight: bold;
+}
+
+.thead-dark {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /*box-shadow: inset 0 50px 10px #F15D11;
+    color: #212121;*/
+    /*background-color: #F15D11;*/
+    box-shadow: inset 0 0 40px #101010;
+    color: #F15D11;
+}
+
+.bth {
+    border: 0 transparent !important;
+    background-color: transparent !important;
+    color: #F15D11;
+}
+
+.bth:hover {
+    color: #914119;
+}
+
+.bth:focus {
+    outline: none;
+    color: #914119;
+}
+
+.thead-dark th, .bth {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bti button {
+    margin-left: 5px;
+}
+
+.add a {
+    width: 80px;
+    height: 38px;
+}
+
+.btn-outline-success {
+    color: #F15D11;
+    border-color: #F15D11;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+    background-color: #F15D11;
+    border-color: #F15D11;
+    color: #fff;
+}
+
+.form-control {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50%;
+    background-color: #212121;
+    border: #F15D11 1px solid;
+    box-shadow: inset 0 0 5px #F15D11;
+    border-radius: 10px;
+    color: #928c8c;
+}
+
+.combo-box {
+    width: 25%;
+}

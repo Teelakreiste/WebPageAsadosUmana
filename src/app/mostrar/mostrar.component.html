@@ -1,0 +1,51 @@
+
+<form class="formulario" [formGroup]="form" action="">
+  <input type="text" name="buscar" placeholder="Buscar" class="form-control" formControlName="buscar">
+</form>
+
+<div class="container">
+  <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col"><button class="bth" (click)="ordenarPorId()">#</button></th>
+          <th scope="col"><button class="bth" (click)="ordenarPorCategoria()">CATEGORÍA</button></th>
+          <th scope="col"><button class="bth" (click)="ordenarPorNombre()">DESCRIPCIÓN</button></th>
+          <th scope="col"><button class="bth" (click)="ordenarPorPrecio()">PRECIO</button></th>
+          <th scope="col">
+            <div class="add">
+              <a routerLink="/panel/administracion/nuevo/articulo" class="btn btn-outline-success"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngIf="fil.length > 0; else mostrar">
+        <tr *ngFor="let productos of produ">
+          <th scope="row">{{productos.id}}</th>
+          <td>{{productos.categoria}}</td>
+          <td>{{productos.nombre}}</td>
+          <td>{{productos.precio}}</td>
+          <td class="bti">
+              <button routerLink="/panel/administracion/editar/articulo/{{productos.id}}" class="btn btn-outline-primary"><i class="fa-solid fa-pen"></i></button>
+              <button (click)="deleteRow(productos)" class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i></button>
+          </td>
+        </tr>
+        <tr *ngIf="produ.length <= 0">
+          <th colspan="5" scope="row">NO SE ENCONTRARON RESULTADOS.</th>
+        </tr>
+      </tbody>
+      <ng-template #mostrar>  
+        <tbody>
+          <tr *ngFor="let producto of productos">
+            <th scope="row">{{producto.id}}</th>
+            <td>{{producto.categoria}}</td>
+            <td>{{producto.nombre}}</td>
+            <td>{{producto.precio}}</td>
+            <td class="bti">
+                <button routerLink="/panel/administracion/editar/articulo/{{producto.id}}" class="btn btn-outline-primary"><i class="fa-solid fa-pen"></i></button>
+                <button (click)="deleteRow(producto)" class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </ng-template>
+    </table>
+</div>

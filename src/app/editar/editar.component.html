@@ -1,0 +1,25 @@
+<div class="container">
+    <a routerLink="/panel/administracion/mostrar/articulos" class="btn btn-outline-secondary">
+        <i class="fa-solid fa-angle-left"></i> Atrás
+    </a>
+    <h2>EDITAR PRODUCTO</h2> 
+    <form class="form" [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="divider"></div>
+        <div class="mb-3">
+            <label class="form-label" for="descripcion">Nombre</label>
+            <input formControlName="nombre" name="descripcion" type="text" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="categoria">Categoria</label>
+            <select formControlName="categoria" name="categoria" class="form-control">
+                <option *ngFor="let categoria of categorias" [value]="categoria">{{categoria}}</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="precio">Precio</label>
+            <input formControlName="precio" name="precio" type="number" min="0" class="form-control" placeholder="Precio" required>
+        </div>
+        <div class="divider down"></div>
+        <button [disabled]="!editForm.valid" type="submit" class="btn btn-success">Guardar</button>
+    </form>
+</div>
