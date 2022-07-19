@@ -9,6 +9,14 @@
     width: 150px;
     height: 150px;
     padding: 10px;
+    border-radius: 30px;
+
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%);
+    -moz-filter: grayscale(70%);
+    -o-filter: grayscale(70%);
+    -ms-filter: grayscale(70%);
+    transition: filter 0.5s ease-in-out;
 }
 
 .content h2 {
@@ -36,7 +44,8 @@
     border-radius: 30px;
     background-color: #212121;
     /*box-shadow: inset 0px 1px 5px 3px #C14A0E;*/
-    box-shadow: inset 50px 50px 50px #C14A0E;
+    box-shadow: inset 10px 10px 50px #C14A0E, inset -10px -10px 50px #914119;
+    /*box-shadow: inset 50px 50px 50px #C14A0E;*/
     margin-bottom: 5px;
 }
 

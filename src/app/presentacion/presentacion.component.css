@@ -16,5 +16,5 @@
     margin-left: 5px;
     height: 200px;
     border-radius: 10px;
-    box-shadow: inset 0px 2px 1.5px #C14A0E;
+    box-shadow: inset 0px 2px 1.5px #C14A0E, inset 0px -2px 1.5px #914119;
 }
