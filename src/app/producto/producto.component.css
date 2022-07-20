@@ -10,13 +10,6 @@
     height: 150px;
     padding: 10px;
     border-radius: 30px;
-
-    filter: grayscale(70%);
-    -webkit-filter: grayscale(70%);
-    -moz-filter: grayscale(70%);
-    -o-filter: grayscale(70%);
-    -ms-filter: grayscale(70%);
-    transition: filter 0.5s ease-in-out;
 }
 
 .content h2 {
