@@ -63,8 +63,14 @@
 }
 
 .card-body {
-    height: 50px;
+    margin: 0;
     background-color: #914119;
     color: #b4aeae !important;
     box-shadow: inset 2px 1px 1px #212121, inset -2px 1px 1px #212121;
+    height: 10%;
+}
+
+.card-body p {
+    margin: 0;
+    padding: 0;
 }

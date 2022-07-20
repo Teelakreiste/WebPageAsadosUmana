@@ -22,7 +22,6 @@
 
 .card-body {
     display: block;
-    margin: 0 auto;
     border-radius: 10px;
     /*box-shadow: inset 15px 40px 30px #C14A0E;*/
     /*box-shadow: inset 0px 30px 25px #C14A0E;*/
@@ -32,8 +31,20 @@
     margin-top: 10px;
 }
 .card-body.text{
-    height: 250px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     box-shadow: inset 0px 0px 0px #C14A0E;
+}
+
+.card-body.text a {
+    text-decoration: none;
+}
+
+.card-body.text a:hover > h3 {
+    color: #C14A0E;
+}
+
+.card-body.two {
+    background-color: #914119;
+    color: #b4aeae !important;
+    box-shadow: inset 0px -5px 1.5px #C14A0E;
+    margin-bottom: 10px;
 }
