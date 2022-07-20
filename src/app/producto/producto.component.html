@@ -10,7 +10,16 @@
                 <ul class="list-group">
                     <li class="list-group" id="img"><img src="../../assets/almuerzos.png" alt=""></li>
                     <li class="list-group-item active" id="titulo">ALMUERZOS</li>
-                    <li class="list-group" *ngFor="let almuerzo of almuerzos">{{almuerzo.nombre}}</li>
+                    <li class="list-group" *ngFor="let almuerzo of almuerzos">
+                        <a data-bs-toggle="collapse" href="#collapse{{almuerzo.id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            {{almuerzo.nombre}}
+                        </a>
+                        <div class="collapse" id="collapse{{almuerzo.id}}">
+                            <div class="card card-body">
+                                <p>Precio: ${{almuerzo.precio}} COP</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="col-sm-3">
@@ -19,7 +28,16 @@
                 <ul class="list-group">
                     <li class="list-group" id="img"><img src="../../assets/pescados.png" alt=""></li>
                     <li class="list-group-item active" id="titulo">PESCADOS</li>
-                    <li class="list-group" *ngFor="let pescado of pescados">{{pescado.nombre}}</li>
+                    <li class="list-group" *ngFor="let pescado of pescados">
+                        <a data-bs-toggle="collapse" href="#collapse{{pescado.id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            {{pescado.nombre}}
+                        </a>
+                        <div class="collapse" id="collapse{{pescado.id}}">
+                            <div class="card card-body">
+                                <p>Precio: ${{pescado.precio}} COP</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="col-sm-3">
@@ -28,7 +46,16 @@
                 <ul class="list-group">
                     <li class="list-group" id="img"><img src="../../assets/carnes.png" alt=""></li>
                     <li class="list-group-item active" id="titulo">CARNES</li>
-                    <li class="list-group" *ngFor="let carne of carnes">{{carne.nombre}}</li>
+                    <li class="list-group" *ngFor="let carne of carnes">
+                        <a data-bs-toggle="collapse" href="#collapse{{carne.id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            {{carne.nombre}}
+                        </a>
+                        <div class="collapse" id="collapse{{carne.id}}">
+                            <div class="card card-body">
+                                <p>Precio: ${{carne.precio}} COP</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="col-sm-3">
@@ -37,7 +64,16 @@
                 <ul class="list-group">
                     <li class="list-group" id="img"><img src="../../assets/bebidas.png" alt=""></li>
                     <li class="list-group-item active" id="titulo">BEBIDAS</li>
-                    <li class="list-group" *ngFor="let bebida of bebidas">{{bebida.nombre}}</li>
+                    <li class="list-group" *ngFor="let bebida of bebidas">
+                        <a data-bs-toggle="collapse" href="#collapse{{bebida.id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            {{bebida.nombre}}
+                        </a>
+                        <div class="collapse" id="collapse{{bebida.id}}">
+                            <div class="card card-body">
+                                <p>Precio: ${{bebida.precio}} COP</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

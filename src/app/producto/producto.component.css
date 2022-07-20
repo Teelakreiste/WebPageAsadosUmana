@@ -59,3 +59,18 @@
     color: #212121;
     box-shadow: inset 50px 50px 50px #C14A0E;
 }
+
+.list-group a {
+    color: #928c8c;
+    text-decoration: none;
+}
+
+.list-group a:hover {
+    color: #837d7d;
+}
+
+.card-body {
+    background-color: #914119;
+    color: #928c8c;
+    box-shadow: inset 2px 1px 1px #212121, inset -2px 1px 1px #212121;
+}
