@@ -4,6 +4,8 @@ import { PostService } from '../post.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-editar',
   templateUrl: './editar.component.html',
@@ -45,10 +47,23 @@ export class EditarComponent implements OnInit {
       });
     });
   }
+
+  showModal() {
+    Swal.fire({
+      title: 'Articulo editado',
+      text: 'El articulo se ha editado correctamente.',
+      icon: 'success',
+      background: '#212121',
+      color: '#928c8c',
+      confirmButtonText: 'Ok',
+      confirmButtonColor: '#F15D11',
+    });
+  }
   
   onSubmit() {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.PostService.updatePost(this.editForm.value, id);
+    this.showModal();
     this.router.navigate(['/panel/administracion/mostrar/articulos']);
   }
 }

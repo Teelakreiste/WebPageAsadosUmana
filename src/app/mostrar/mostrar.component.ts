@@ -6,6 +6,8 @@ import { Producto } from '../producto.model';
 import { FormGroup, FormControl, Validators } from '@angular/forms'; // <-- NgModel lives here
 import { debounceTime } from 'rxjs/operators'; // <-- Import debounceTime operator from rxjs/operators
 
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-mostrar',
   templateUrl: './mostrar.component.html',
@@ -36,7 +38,31 @@ export class MostrarComponent implements OnInit {
   }
 
   deleteRow(producto : Producto) {
-    this.postService.deletePost(producto.id);
+    //this.postService.deletePost(producto.id);
+    Swal.fire({
+      title: 'Estas seguro?',
+      text: "No podras revertir esto!",
+      icon: 'warning',
+      showCancelButton: true,
+      background: '#212121',
+      color: '#928c8c',
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, eliminar!'
+    }).then((result) => {
+      if (result.value) {
+        this.postService.deletePost(producto.id);
+        Swal.fire({
+          title: 'Eliminado!',
+          text: 'El articulo se ha eliminado correctamente.',
+          icon: 'success',
+          background: '#212121',
+          color: '#928c8c',
+          confirmButtonText: 'Ok',
+          confirmButtonColor: '#F15D11'
+        });
+      }
+    })
   }
   
   private buildForm() { // <-- Add this line
